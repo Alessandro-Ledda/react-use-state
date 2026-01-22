@@ -1,13 +1,18 @@
 function Button(props) {
     // destrutturiamo
-    const { title, content, onBtnToggle, isOpen } = props;
+    const { title, description, onBtnToggle, isOpen } = props;
 
     return (
         <>
-            <button className="btn"
-                onClick={onBtnToggle}>{title}
-            </button>
-            {isOpen && <div>{content}</div>}
+            <div className="button-item">
+                <button className="btn"
+                    onClick={onBtnToggle}>{title}
+                </button>
+                <div className="content">
+                    {isOpen && <div>{description}</div>}
+                </div>
+
+            </div>
 
         </>
     )

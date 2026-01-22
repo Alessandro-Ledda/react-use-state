@@ -1,0 +1,40 @@
+/* Container principale */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+/* Lista dei bottoni */
+.button-list {
+    display: flex;
+    gap: 10px;
+}
+
+.button-item {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Bottone */
+.button-item .btn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Bottone hover */
+.button-item .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contenuto aperto */
+.button-item .content {
+    background-color: #e9ecef;
+
+}
